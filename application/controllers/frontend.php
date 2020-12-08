@@ -40,6 +40,15 @@ class frontend extends CI_Controller {
 		$this->load->view('template/footer_fo2');	
 	}
 
+	public function register()
+	{
+		$this->load->helper('url');
+
+		$this->load->view('template/header_fo2');	
+		$this->load->view('frontend/register');	
+		$this->load->view('template/footer_fo2');	
+	}
+
 	//FUNGSI TAMBAH
 	 public function Create()
 	{

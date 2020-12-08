@@ -25,10 +25,9 @@
 								<button class="submit-btn">Login</button>
 							</div>
 							<br>
-							<div class="form-btn" style="width: 200px">
-								<button class="submit-btn">Register</button>
-							</div></center>
 						</form>
+								<a href="<?=site_url()?>index.php/frontend/register" class="submit-btn">Register</a>
+							</center>
 					</div>
 				</div>
 			</div>
