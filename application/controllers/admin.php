@@ -26,22 +26,18 @@ class admin extends CI_Controller {
 	{
 	 	$this->load->helper('url','form');
 		$this->load->library('form_validation');
-	 	$this->load->model('event_model');
+	 	$this->load->model('admin_model');
 
-	 	$this->form_validation->set_rules('id_event','event','trim|required');
-	 	$this->form_validation->set_rules('id_tiket','id_tiket','trim|required');
-	 	$this->form_validation->set_rules('nama_event','nama_event','trim|required');
-	 	$this->form_validation->set_rules('tanggal_event','tanggal_event','trim|required');
-	 	$this->form_validation->set_rules('tempat_event','tempat_event','trim|required');
-	 	$this->form_validation->set_rules('waktu_event','waktu_event','trim|required');
+	 	$this->form_validation->set_rules('id_admin','admin','trim|required');
+
 	 if($this->form_validation->run()==FALSE)
 	 {
-	 	$this->load->view('event/tambah_event_view');
+	 	$this->load->view('admin/tambah_admin_view');
 	 }
 	 else
 	 {
-	 	$this->event_model->insertevent();
-	$this->load->view('event/tambah_event_sukses');
+	 	$this->admin_model->insertevent();
+	$this->load->view('admin/tambah_event_sukses');
 		}
 	}
 
@@ -58,7 +54,7 @@ class admin extends CI_Controller {
 		}
 		else{
 			$this->admin_model->UpdateById($id);
-			$this->load->view('admin/edit_admin_sukses');
+			redirect('index.php/admin');
 			}
 		}	
 

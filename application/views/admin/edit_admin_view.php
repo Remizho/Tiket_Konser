@@ -3,7 +3,7 @@
 <div class="container">
 <div class="row">
 
-<?php echo form_open('admin/update/'.$this->uri->segment(3)); ?>
+<?php echo form_open('index.php/admin/update/'.$this->uri->segment(3)); ?>
 <legend> Edit Data Admin</legend>
 <!--  	<?php //var_dump($event); ?>--> 	
 	<?php echo validation_errors(); ?>
@@ -26,14 +26,14 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="username">Username :</label>
 		<div class="col-sm-10">
-		<input type="text" name="username" class="form-control" id="username" value="<?php echo $username[0]->username?>" placeholder="username"><br>
+		<input type="text" name="username" class="form-control" id="username" value="<?php echo $admin[0]->username?>" placeholder="username"><br>
 		</div>
 	</div>
 
 	<div class="form-group">
 		<label class="control-label col-sm-2">Passsword :</label>
 		<div class="col-sm-10">
-		<input class="form-control" value="<?php echo $password[0]->password?>" type="text" placeholder="password" name="password" placeholder="password"><br>
+		<input class="form-control" value="<?php echo $admin[0]->password?>" type="text" placeholder="password" name="password" placeholder="password"><br>
 		</div>
 	</div>
 

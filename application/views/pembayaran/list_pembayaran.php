@@ -1,4 +1,4 @@
-<?php $this->load->view('pembayaran/header');?>
+<?php $this->load->view('admin/header');?>
 <div class="container">
 <div class="panel panel-default">
 <div class="panel-heading"> Daftar Pembayaran </div>
@@ -30,4 +30,4 @@
 </div>
 </div>
 </div>
-<?php $this->load->view('pembayaran/footer');?>
+<?php $this->load->view('admin/footer');?>

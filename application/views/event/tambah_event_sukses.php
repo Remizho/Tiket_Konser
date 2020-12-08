@@ -1,4 +1,4 @@
 <?php 
 	echo "Sukses Simpan Data ";
-	echo anchor('event/create', 'Masukan data lagi'); 
+	echo anchor('index.php/event/index', 'Back'); 
 	?>

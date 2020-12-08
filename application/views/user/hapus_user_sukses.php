@@ -14,7 +14,7 @@
 		<div class="alert alert-success">
 		<strong> Data Berhasil dihapus</strong>
 		<?php 
-		echo anchor('user/index', 'Lihat data user'); ?>
+		echo anchor('index.php/user', 'Lihat data user'); ?>
 		</div>
 		<script src="<?=base_url()?>assets/js/jquery.js"></script>
 		<script src="<?=base_url()?>assets/js/bootsrtap.min.js"></script>

@@ -14,7 +14,7 @@
 <body>
   <footer class="footer text-center">
     <div class="container">
-      <strong><p align="center">Rahma Nuzula, Rinjang Esa Nurita, Esa luh tresna</p></strong>
+      <strong><p align="center">Copyright</p></strong>
     </div>
   </footer>
 </body>

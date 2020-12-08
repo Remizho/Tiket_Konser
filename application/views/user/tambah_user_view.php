@@ -1,34 +1,30 @@
-<?php $this->load->view('user/header');?>
+<?php $this->load->view('admin/header');?>
 
 <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
 <div class="container">
 <div class="row">
 	
-<?php  echo form_open('user/Create');?>
+<?php  echo form_open('index.php/user/Create');?>
 	<legend> Tambah Data User</legend>
 
 	<?php echo validation_errors(); ?>
 	<form class="form-horisontal" role="form">
-	<div class="form-group">
-		<label class="control-label col-sm-2" for="id_user">ID User</label>
-		<div class="col-sm-10">
-		<input type="text" name="id_user" class="form-control" id="id_user" placeholder="id_user"><br></div></div>
 
 	<div class="form-group">
-		<label class="control-label col-sm-2" for="">nama_user</label>
+		<label class="control-label col-sm-2" for="">Username</label>
 		<div class="col-sm-10">
-		<input type="text" name="nama_user" class="form-control" id="nama_user" placeholder="nama_user"><br>
+		<input type="text" name="username" class="form-control" id="nama_user" placeholder="Usename" required=""><br>
 	</div></div>
 
 	<div class="form-group">
-		<label class="control-label col-sm-2" for="">Jenis Kelamin</label>
+		<label class="control-label col-sm-2" for="">Password</label>
 		<div class="col-sm-10">
-		<input type="text" name="jenis_kelamin" class="form-control" id="jenis_kelamin" placeholder="jenis_kelamin"><br></div></div>
+		<input type="password" name="password" class="form-control" id="jenis_kelamin" placeholder="Pasword" required=""><br></div></div>
 
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="">email</label>
 		<div class="col-sm-10">
-		<input type="text" name="email" class="form-control" id="email" placeholder="email"><br>
+		<input type="email" name="email" class="form-control" id="email" placeholder="email" required=""><br>
 	</div></div>
 
 	<div class="form-group">
@@ -53,4 +49,4 @@
 </div>
 </div>
 </form>
-<?php $this->load->view('user/footer');?>
+<?php $this->load->view('admin/footer');?>

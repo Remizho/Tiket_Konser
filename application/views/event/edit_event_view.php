@@ -3,7 +3,7 @@
 <div class="container">
 <div class="row">
 
-<?php echo form_open('event/update/'.$this->uri->segment(3)); ?>
+<?php echo form_open('index.php/event/update/'.$this->uri->segment(3)); ?>
 <legend> Edit Data event</legend>
 <!--  	<?php //var_dump($event); ?>--> 	
 	<?php echo validation_errors(); ?>

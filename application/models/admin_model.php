@@ -30,7 +30,7 @@ class admin_model extends CI_Model {
 	public function getevent($id)
 	{
 		$this->db->where('id_admin',$id);
-		$query=$this->db->get('id_admin');
+		$query=$this->db->get('admin');
 		return $query->result();	 
 	}
 	

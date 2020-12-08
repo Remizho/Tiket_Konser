@@ -14,7 +14,7 @@
 		<div class="alert alert-success">
 		<strong> Data Berhasil diupdate</strong>
 		<?php 
-		echo anchor('event/index', 'Lihat data event'); ?>
+		echo anchor('index.php/event/index', 'Lihat data event'); ?>
 		</div>
 		<script src="<?=base_url()?>assets/js/jquery.js"></script>
 		<script src="<?=base_url()?>assets/js/bootsrtap.min.js"></script>

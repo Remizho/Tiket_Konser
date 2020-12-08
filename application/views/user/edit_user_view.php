@@ -1,9 +1,9 @@
-<?php $this->load->view('user/header');?>
+<?php $this->load->view('admin/header');?>
 
 <div class="container">
 <div class="row">
 
-<?php echo form_open('user/update/'.$this->uri->segment(3)); ?>
+<?php echo form_open('index.php/user/update/'.$this->uri->segment(3)); ?>
 <legend> Edit Data User</legend>
 <!--  	<?php //var_dump($event); ?>--> 	
 	<?php echo validation_errors(); ?>
@@ -17,30 +17,30 @@
 	</div>
 
 	<div class="form-group">
-		<label class="control-label col-sm-2" for="nama_user">nama user :</label>
+		<label class="control-label col-sm-2" for="nama_user">Usenamer</label>
 		<div class="col-sm-10">
-		<input type="text" name="nama_user" class="form-control" id="nama_user" value="<?php echo $user[0]->nama_user?>" placeholder="nama_user"><br>
+		<input type="text" name="username" class="form-control" id="nama_user" value="<?php echo $user[0]->username?>" placeholder="username"><br>
 		</div>
 	</div>
 
 	<div class="form-group">
-		<label class="control-label col-sm-2" for="nama_user">Jenis Kelamin :</label>
+		<label class="control-label col-sm-2" for="nama_user">Password</label>
 		<div class="col-sm-10">
-		<input type="text" name="jenis_kelamin" class="form-control" id="jenis_kelamin" value="<?php echo $user[0]->jenis_kelamin?>" placeholder="jenis_kelamin"><br>
+		<input type="password" name="password" class="form-control" id="jenis_kelamin" value="<?php echo $user[0]->password?>" placeholder="password"><br>
 		</div>
 	</div>
 	
 	<div class="form-group">
-		<label class="control-label col-sm-2">Email :</label>
+		<label class="control-label col-sm-2">Email</label>
 		<div class="col-sm-10">
-		<input class="form-control" value="<?php echo $user[0]->email?>" type="text" placeholder="email" name="email" placeholder="email"><br>
+		<input class="form-control" value="<?php echo $user[0]->email?>" type="email" placeholder="email" name="email" placeholder="email"><br>
 		</div>
 	</div>
 	
 	<div class="form-group">
 		<label class="control-label col-sm-2">Alamat :</label>
 		<div class="col-sm-10">
-		<input class="form-control" value="<?php echo $user[0]->alamat?>" type="text" placeholder="email" name="alamat" placeholder="email"><br>
+		<input class="form-control" value="<?php echo $user[0]->alamat?>" type="text" placeholder="alamat" name="alamat" placeholder="email"><br>
 		</div>
 	</div>
 	
@@ -59,4 +59,4 @@
 	</div>
 
 </form></div></div>
-<?php $this->load->view('user/footer');?>
+<?php $this->load->view('admin/footer');?>

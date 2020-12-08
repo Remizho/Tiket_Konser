@@ -26,7 +26,7 @@
 							</div>
 							<br>
 						</form>
-								<a href="<?=site_url()?>index.php/frontend/register" class="submit-btn">Register</a>
+								<a href="<?=site_url()?>index.php/frontend/register">Register</a>
 							</center>
 					</div>
 				</div>

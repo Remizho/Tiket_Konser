@@ -28,12 +28,8 @@ class user extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->load->model('user_model');
 
-		$this->form_validation->set_rules('id_user','id_user','trim|required');
-		$this->form_validation->set_rules('nama_user','nama_user','trim|required');
-		$this->form_validation->set_rules('jenis_kelamin','jenis_kelamin','trim|required');
-		$this->form_validation->set_rules('email','email','trim|required');
-		$this->form_validation->set_rules('alamat','alamat','trim|required');
-		$this->form_validation->set_rules('no_telp','no_telp','trim|required');
+		$this->form_validation->set_rules('password','password','trim|required');
+		$this->form_validation->set_rules('username','username','trim|required');
 		if($this->form_validation->run()==FALSE)
 		{
 		$this->load->view('user/tambah_user_view');
@@ -41,18 +37,15 @@ class user extends CI_Controller {
 		else
 		{
 		$this->user_model->insertevent();
-		$this->load->view('user/tambah_user_sukses');
+		redirect('index.php/user');
 		}
 		}
 
 	public function Update($id)
 	{
 		$this->form_validation->set_rules('id_user','id_user','trim|required');
-		$this->form_validation->set_rules('nama_user','nama_user','trim|required');
-		$this->form_validation->set_rules('jenis_kelamin','jenis_kelamin','trim|required');
-		$this->form_validation->set_rules('email','email','trim|required');
-		$this->form_validation->set_rules('alamat','alamat','trim|required');
-		$this->form_validation->set_rules('no_telp','no_telp','trim|required');
+		$this->form_validation->set_rules('username','username','trim|required');
+		$this->form_validation->set_rules('password','password','trim|required');
 
 		$data['user']=$this->user_model->getevent($id);
 		if($this->form_validation->run()==FALSE){
@@ -60,7 +53,7 @@ class user extends CI_Controller {
 		}
 		else{
 			$this->user_model->UpdateById($id);
-			$this->load->view('user/edit_user_sukses');
+			redirect('index.php/user');
 			}
 		}	
 

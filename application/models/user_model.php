@@ -18,9 +18,8 @@ class user_model extends CI_Model {
 	 public function insertevent()
 	 {
 	 	$object = array
-		('id_user' =>$this->input->post('id_user'),
-	 	'nama_user' =>$this->input->post('nama_user'),
-	 	'jenis_kelamin' =>$this->input->post('jenis_kelamin'),
+		('username' =>$this->input->post('username'),
+	 	'password' =>$this->input->post('password'),
 	 	'email' =>$this->input->post('email'),		 	
 	 	'alamat' =>$this->input->post('alamat'),	 
 	 	'no_telp' =>$this->input->post('no_telp')
@@ -37,9 +36,9 @@ class user_model extends CI_Model {
 	
 	public function UpdateById($id)
 	{
-		$data = array('id_user' =>$this->input->post('id_user'),
-		 	'nama_user' =>$this->input->post('nama_user'),
-		 	'jenis_kelamin' =>$this->input->post('jenis_kelamin'),
+		$data = array(
+		 	'username' =>$this->input->post('username'),
+		 	'password' =>$this->input->post('password'),
 		 	'email' =>$this->input->post('email'),
 		 	'alamat' =>$this->input->post('alamat'),
 		 	'no_telp' =>$this->input->post('no_telp')

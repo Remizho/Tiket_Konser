@@ -3,14 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class event extends CI_Controller {
 
-	public function index()
-	{
-		$this->load->helper('url');
-		$this->load->model('event_model');
-		$data['event']=$this->event_model->readevent();
-		$this->load->view('event/list_event', $data);	
-	}
-
 	public function __construct()
 	{
 
@@ -19,6 +11,14 @@ class event extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->load->helper('url','form');
 
+	}
+
+	public function index()
+	{
+		$this->load->helper('url');
+		$this->load->model('event_model');
+		$data['event']=$this->event_model->readevent();
+		$this->load->view('event/list_event', $data);	
 	}
 
 	//FUNGSI TAMBAH
@@ -67,7 +67,8 @@ class event extends CI_Controller {
 	public function delete($id)
 	{
 		$this->event_model->delete($id);
-		$this->load->view('event/hapus_event_sukses');
+		$data['event']=$this->event_model->readevent();
+		$this->load->view('event/list_event', $data);
 	}
 
 }
