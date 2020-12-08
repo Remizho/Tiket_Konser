@@ -4,7 +4,7 @@
 				<div class="row">
 					<div class="booking-form">
 						<div class="form-header">
-							<h1>Masuk Disini</h1>
+							<h1>Daftar Disini</h1>
 						</div>
 						<form>
 							<div class="row">

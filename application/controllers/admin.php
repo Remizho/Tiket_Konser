@@ -11,6 +11,16 @@ class admin extends CI_Controller {
 		$this->load->view('admin/list_admin', $data);	
 	}
 
+	public function login()
+	{
+		$this->load->helper('url');
+		$this->load->model('admin_model');
+		$data['admin']=$this->admin_model->readevent();
+		$this->load->view('template/header_fo2');
+		$this->load->view('frontend/login_admin');
+		$this->load->view('template/footer_fo2');	
+	}
+
 	public function __construct()
 	{
 
