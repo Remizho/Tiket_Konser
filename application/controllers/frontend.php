@@ -3,6 +3,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class frontend extends CI_Controller {
 
+	public function __construct()
+	{
+
+		parent::__construct();
+		$this->load->model('admin_model');
+		$this->load->library('form_validation');
+		$this->load->helper('url','form');
+
+	}
+
 	public function index()
 	{
 		$this->load->helper('url');
@@ -21,14 +31,13 @@ class frontend extends CI_Controller {
 		$this->load->view('template/footer_fo');	
 	}
 
-	public function __construct()
+	public function login()
 	{
+		$this->load->helper('url');
 
-		parent::__construct();
-		$this->load->model('admin_model');
-		$this->load->library('form_validation');
-		$this->load->helper('url','form');
-
+		$this->load->view('template/header_fo2');	
+		$this->load->view('frontend/login');	
+		$this->load->view('template/footer_fo2');	
 	}
 
 	//FUNGSI TAMBAH

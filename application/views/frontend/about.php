@@ -1,5 +1,5 @@
-<section class="tm-banner">
-		<!-- Flexslider -->
+<!-- <section class="tm-banner">
+		Flexslider
 		<div class="flexslider flexslider-banner">
 		  <ul class="slides">
 		    <li>
@@ -28,13 +28,13 @@
 		    </li>
 		  </ul>
 		</div>		
-	</section>
+	</section> -->
 
 	<!-- gray bg -->	
 	<section class="container tm-home-section-1" id="more">
 		<div class="row">
 			<!-- slider -->
-			<div class="flexslider flexslider-about effect2">
+			<!-- <div class="flexslider flexslider-about effect2">
 			  <ul class="slides">
 			    <li>
 			      <img src="<?=site_url()?>/assets/frontend/img/about-1.jpg" alt="image" />
@@ -96,7 +96,7 @@
 			    </li>
 			  </ul>
 			</div>
-		</div>
+		</div> -->
 	
 		<div class="section-margin-top about-section">
 			<div class="row">				
@@ -164,7 +164,7 @@
 	</section>		
 	
 	<!-- white bg -->
-	<section class="tm-white-bg section-padding-bottom">
+	<!-- <section class="tm-white-bg section-padding-bottom">
 		<div class="container">
 			<div class="row">
 				<div class="tm-section-header section-margin-top">
@@ -174,7 +174,7 @@
 				</div>				
 			</div>
 			<div class="row">
-				<!-- Testimonial -->
+				Testimonial
 				<div class="col-lg-12">
 					<div class="tm-what-we-do-right">
 						<div class="tm-about-box-2 margin-bottom-30">
@@ -214,4 +214,4 @@
 				</div>							
 			</div>			
 		</div>
-	</section>
+	</section> -->

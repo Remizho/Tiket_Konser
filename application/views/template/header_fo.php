@@ -39,9 +39,9 @@ http://www.templatemo.com/tm-475-holiday
 		            </div>
 	  				<nav class="tm-nav">
 						<ul>
-							<li><a href="<?=site_url()?>" class="active">Home</a></li>
-							<li><a href="<?=site_url()?>about">About</a></li>
-							<li><a href="contact.html">Booking</a></li>
+							<li><a href="<?=site_url()?>">Home</a></li>
+							<li><a href="<?=site_url()?>index.php/frontend/about">About</a></li>
+							<li><a href="<?=site_url()?>index.php/frontend/login">Login</a></li>
 						</ul>
 					</nav>		
 	  			</div>				
