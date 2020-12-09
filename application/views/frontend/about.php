@@ -102,60 +102,41 @@
 			<div class="row">				
 				<div class="tm-section-header">
 					<div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
-					<div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">Who We Are</h2></div>
+					<div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">Kelompok Kami</h2></div>
 					<div class="col-lg-3 col-md-3 col-sm-3"><hr></div>	
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="margin-left: 157px">
 					<div class="tm-about-box-1">
-						<a href="#"><img src="<?=site_url()?>/assets/frontend/img/about-4.jpg" alt="img" class="tm-about-box-1-img"></a>
-						<h3 class="tm-about-box-1-title">Thomas <span>( Founder )</span></h3>
-						<p class="margin-bottom-15 gray-text">Proin gravida nibhvell aliquet. Aenean sollicitudin bibum auctor nisi elit.</p>
+						<a href="#"><img src="<?=site_url()?>/assets/frontend/img/anggota1.jpg" alt="img" class="tm-about-box-1-img" style="width: 150px"></a>
+						<h3 class="tm-about-box-1-title">Miranda Eristiana <br><span>( Ketua Kelompok )</span></h3>
+						<p class="margin-bottom-15 gray-text" style="text-align: justify;">Jalan menuju sukses tak semudah mengambil mimpi dalam tidur.</p>
 						<div class="gray-text">
 							<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
 							<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
-							<a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
-							<a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 					<div class="tm-about-box-1">
-						<a href="#"><img src="<?=site_url()?>/assets/frontend/img/about-5.jpg" alt="img" class="tm-about-box-1-img"></a>
-						<h3 class="tm-about-box-1-title">Keith <span>( Co-Founder )</span></h3>
-						<p class="margin-bottom-15 gray-text">Proin gravida nibhvell aliquet. Aenean sollicitudin bibum auctor nisi elit.</p>
+						<a href="#"><img src="<?=site_url()?>/assets/frontend/img/anggota2.jpg" alt="img" class="tm-about-box-1-img" style="width: 150px"></a>
+						<h3 class="tm-about-box-1-title">Remizar Fahrezi A.F. <br><span>( Anggota )</span></h3>
+						<p class="margin-bottom-15 gray-text" style="text-align: justify;">Terus lah melangkah maju walau badai dan rintangan menghantuimu.</p>
 						<div class="gray-text">
-							<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
-							<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
-							<a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
-							<a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
+							<a href="https://twitter.com/remizho" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+							<a href="https://web.facebook.com/remizar.ezhoo/" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 					<div class="tm-about-box-1">
 						<a href="#"><img src="<?=site_url()?>/assets/frontend/img/about-6.jpg" alt="img" class="tm-about-box-1-img"></a>
-						<h3 class="tm-about-box-1-title">John <span>( General Manager )</span></h3>
-						<p class="margin-bottom-15 gray-text">Proin gravida nibhvell aliquet. Aenean sollicitudin bibum auctor nisi elit.</p>
+						<h3 class="tm-about-box-1-title">Dian Ika Fitriani <br><span>( Anggota )</span></h3>
+						<p class="margin-bottom-15 gray-text" style="text-align: justify;">Kekompakan akan membawa kita mencapai tujuan yang sama.</p>
 						<div class="gray-text">
 							<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
 							<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
-							<a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
-							<a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<div class="tm-about-box-1">
-						<a href="#"><img src="<?=site_url()?>/assets/frontend/img/about-7.jpg" alt="img" class="tm-about-box-1-img"></a>
-						<h3 class="tm-about-box-1-title">Smith <span>( Manager )</span></h3>
-						<p class="margin-bottom-15 gray-text">Proin gravida nibhvell aliquet. Aenean sollicitudin bibum auctor nisi elit.</p>
-						<div class="gray-text">
-							<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
-							<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
-							<a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
-							<a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
 						</div>
 					</div>
 				</div>
