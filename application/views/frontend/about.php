@@ -131,7 +131,7 @@
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 					<div class="tm-about-box-1">
-						<a href="#"><img src="<?=site_url()?>/assets/frontend/img/about-6.jpg" alt="img" class="tm-about-box-1-img"></a>
+						<a href="#"><img src="<?=site_url()?>/assets/frontend/img/anggota3.jpg" alt="img" class="tm-about-box-1-img" style="width: 150px"></a>
 						<h3 class="tm-about-box-1-title">Dian Ika Fitriani <br><span>( Anggota )</span></h3>
 						<p class="margin-bottom-15 gray-text" style="text-align: justify;">Kekompakan akan membawa kita mencapai tujuan yang sama.</p>
 						<div class="gray-text">

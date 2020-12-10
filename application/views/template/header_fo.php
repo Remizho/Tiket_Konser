@@ -30,7 +30,7 @@ http://www.templatemo.com/tm-475-holiday
   		<div class="container">
   			<div class="row">
   				<div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
-  					<a href="#" class="tm-site-name" style="font-family: forte;font-size: 35px;">AYO KONSER
+  					<a href="<?=site_url()?>" class="tm-site-name" style="font-family: forte;font-size: 35px;">AYO KONSER
   					</a>	
   				</div>
 	  			<div class="col-lg-6 col-md-8 col-sm-9">
