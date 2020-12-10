@@ -20,18 +20,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Administratir</a>
+          <a class="navbar-brand" href="#">Administrator</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="<?=site_url()?>index.php/admin/index"><i class="glyphicon glyphicon-home"></i> Admin</a></li>
-            <li><a href="<?=site_url()?>index.php/event/index"><i class="glyphicon glyphicon-home"></i> Event</a></li>
-            <li><a href="<?=site_url()?>index.php/pembayaran/index">Pembayaran</a></li>
-            <li><a href="<?=site_url()?>index.php/user/index">User</a></li>
+            <li class="active"><a href="<?=site_url()?>index.php/admin/index"><i class="glyphicon glyphicon-home"></i>   Admin</a></li>
+            <li><a href="<?=site_url()?>index.php/event/index"><i class="glyphicon glyphicon-list"></i>   Event</a></li>
+            <li><a href="<?=site_url()?>index.php/pembayaran/index"><i class="glyphicon glyphicon-inbox"></i>    Pembayaran</a></li>
+            <li><a href="<?=site_url()?>index.php/user/index"><i class="glyphicon glyphicon-user"></i>   User</a></li>
+            <li><a href="<?=site_url()?>index.php/admin/logout"><i class="glyphicon glyphicon-off"></i>   Logout</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-  </body>
-</html>

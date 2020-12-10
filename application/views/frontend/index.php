@@ -2,6 +2,17 @@
 		<!-- Flexslider -->
 		<div class="flexslider flexslider-banner">
 		  <ul class="slides">
+			<?php if($this->session->flashdata('user_registered')): ?>
+			<?php echo '<div class="alert alert-success" role="alert">'.$this->session->flashdata('user_registered').'</div>'; ?>
+			<?php endif; ?>
+
+			<?php if($this->session->flashdata('user_loggedin')): ?>
+			<?php echo '<div class="alert alert-success">'.$this->session->flashdata('user_loggedin').'</div>'; ?>
+			<?php endif; ?>
+
+			<?php if($this->session->flashdata('user_loggedout')): ?>
+			<?php echo '<div class="alert alert-success">'.$this->session->flashdata('user_loggedout').'</div>'; ?>
+			<?php endif; ?>
 		    <li>
 			    <div class="tm-banner-inner">
 					<h1 class="tm-banner-title">PSCS <span class="tm-yellow-text">SMAN 3</span> MALANG</h1>

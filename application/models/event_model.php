@@ -14,18 +14,23 @@ class event_model extends CI_Model {
 		return $query->result();
 	}
 	
+	public function insert_event($data)
+    {
+        return $this->db->insert('event', $data);
+	}
+	
 	//FUNGSI TAMBAH
-	 public function insertevent()
-	 {
-	 	$object = array('id_event' =>$this->input->post('id_event'),
-	 	'id_tiket' =>$this->input->post('id_tiket'),
-	 	'nama_event' =>$this->input->post('nama_event'),
-	 	'tanggal_event' =>$this->input->post('tanggal_event'),		 	
-	 	'tempat_event' =>$this->input->post('tempat_event'),	 
-	 	'waktu_event' =>$this->input->post('waktu_event')
-	 	 );
-	 	$this->db->insert('event',$object);
-	 }
+	//  public function insertevent()
+	//  {
+	//  	$object = array('id_event' =>$this->input->post('id_event'),
+	//  	'id_tiket' =>$this->input->post('id_tiket'),
+	//  	'nama_event' =>$this->input->post('nama_event'),
+	//  	'tanggal_event' =>$this->input->post('tanggal_event'),		 	
+	//  	'tempat_event' =>$this->input->post('tempat_event'),	 
+	//  	'waktu_event' =>$this->input->post('waktu_event')
+	//  	 );
+	//  	$this->db->insert('event',$object);
+	//  }
 
 	public function getevent($id)
 	{
@@ -34,18 +39,28 @@ class event_model extends CI_Model {
 		return $query->result();	 
 	}
 	
-	public function UpdateById($id)
-	{
-		$data = array('id_event' =>$this->input->post('id_event'),
-		 	'id_tiket' =>$this->input->post('id_tiket'),
-		 	'nama_event' =>$this->input->post('nama_event'),
-		 	'tanggal_event' =>$this->input->post('tanggal_event'),
-		 	'tempat_event' =>$this->input->post('tempat_event'),
-		 	'waktu_event' =>$this->input->post('waktu_event')
-		 );
-		$this->db->where('id_event',$id);
-		$this->db->update('event',$data);
+    public function update_event($data, $id) 
+    {
+        if ( !empty($data) && !empty($id) ){
+            $update = $this->db->update( 'event', $data, array('id_event'=>$id) );
+            return $update ? true : false;
+        } else {
+            return false;
+        }
 	}
+	
+	// public function UpdateById($id)
+	// {
+	// 	$data = array('id_event' =>$this->input->post('id_event'),
+	// 	 	'id_tiket' =>$this->input->post('id_tiket'),
+	// 	 	'nama_event' =>$this->input->post('nama_event'),
+	// 	 	'tanggal_event' =>$this->input->post('tanggal_event'),
+	// 	 	'tempat_event' =>$this->input->post('tempat_event'),
+	// 	 	'waktu_event' =>$this->input->post('waktu_event')
+	// 	 );
+	// 	$this->db->where('id_event',$id);
+	// 	$this->db->update('event',$data);
+	// }
 
 	public function delete($id)
 	{

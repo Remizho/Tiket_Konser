@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ayo Konser</title>
+  <title>Booking ticket</title>
 <!--
 Holiday Template
 http://www.templatemo.com/tm-475-holiday
@@ -41,7 +41,14 @@ http://www.templatemo.com/tm-475-holiday
 						<ul>
 							<li><a href="<?=site_url()?>">Home</a></li>
 							<li><a href="<?=site_url()?>index.php/frontend/about">About</a></li>
-							<li><a href="<?=site_url()?>index.php/frontend/login">Login</a></li>
+
+							<?php if(!$this->session->userdata('logged_in')) : ?>
+								<li><a href="<?=site_url()?>index.php/user/login">Login</a></li>
+            				<?php endif; ?>
+							<?php if($this->session->userdata('logged_in')) : ?>
+								<li><a href="<?=site_url()?>index.php/user/logout">Logout</a></li>
+            				<?php endif; ?>
+							
 						</ul>
 					</nav>		
 	  			</div>				

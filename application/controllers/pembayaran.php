@@ -9,6 +9,9 @@ class pembayaran extends CI_Controller {
 		$this->load->model('pembayaran_model');
 		$data['pembayaran']=$this->pembayaran_model->readevent();
 		$this->load->view('pembayaran/list_pembayaran', $data);	
+		if(!$this->session->userdata('logged_in_admin')) 
+			redirect('index.php/admin/login');
+			
 	}
 
 	public function __construct()

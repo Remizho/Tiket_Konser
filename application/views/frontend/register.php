@@ -6,18 +6,18 @@
 						<div class="form-header">
 							<h1>Daftar Disini</h1>
 						</div>
-						<form>
+						<?php echo form_open('index.php/user/register'); ?>
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
 										<span class="form-label">Username</span>
-										<input class="form-control" type="text" placeholder="Masukkan Username">
+										<input class="form-control" name="username" type="text" placeholder="Masukkan Username">
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
 										<span class="form-label">Password</span>
-										<input class="form-control" type="email" placeholder="Masukkan Password">
+										<input class="form-control" name="password" type="password" placeholder="Masukkan Password">
 									</div>
 								</div>
 							</div>
@@ -25,13 +25,13 @@
 								<div class="col-sm-6">
 									<div class="form-group">
 										<span class="form-label">Email</span>
-										<input class="form-control" type="text" placeholder="Masukkan Email">
+										<input class="form-control" type="email" name="email" placeholder="Masukkan Email">
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
 										<span class="form-label">Nomor Telpon</span>
-										<input class="form-control" type="email" placeholder="Masukkan Nomor Telpon">
+										<input class="form-control" type="number" name="no_telp" placeholder="Masukkan Nomor Telpon">
 									</div>
 								</div>
 							</div>
@@ -39,7 +39,7 @@
 								<div class="col-sm-12">
 									<div class="form-group">
 										<span class="form-label">Alamat</span>
-										<input class="form-control" type="text" placeholder="Masukkan Alamat">
+										<input class="form-control" type="text" name="alamat" placeholder="Masukkan Alamat">
 									</div>
 								</div>
 							</div>
@@ -47,7 +47,7 @@
 								<button class="submit-btn">Register</button>
 							</div>
 							<br>
-						</form>
+						<?php echo form_close(); ?>
 					</div>
 				</div>
 			</div>

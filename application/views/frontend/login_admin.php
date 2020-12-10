@@ -6,26 +6,27 @@
 						<div class="form-header">
 							<h1>MASUK ADMIN</h1>
 						</div>
-						<form>
+						<?php echo form_open('index.php/admin/login'); ?>
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
 										<span class="form-label">Username</span>
-										<input class="form-control" type="text" placeholder="Enter Username">
+										<input class="form-control" type="text" name="username" placeholder="Enter Username">
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
 										<span class="form-label">Password</span>
-										<input class="form-control" type="email" placeholder="Enter Password">
+										<input class="form-control" type="password" name="password" placeholder="Enter Password">
 									</div>
 								</div>
 							</div>
 							<center><div class="form-btn" style="width: 200px"> 
-								<button class="submit-btn">Login</button>
+								<button class="submit-btn" type="submit">Login</button>
 							</div>
 							<br>
-						</form>
+							<?php echo form_close(); ?>
+							<a href="<?=site_url()?>index.php/frontend"><< Kembali</a>
 							</center>
 					</div>
 				</div>

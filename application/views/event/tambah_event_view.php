@@ -4,10 +4,11 @@
 <div class="container">
 <div class="row">
 	
-<?php  echo form_open('index.php/event/Create');?>
-	<legend> Tambah Data event</legend>
+<?php echo validation_errors(); ?>
+<?php echo (isset( $upload_error)) ? '<div class="alert alert-warning" role="alert">' .$upload_error. '</div>' : ''; ?>
+<?php echo form_open_multipart( 'index.php/event/Create', array('class' => 'needs-validation', 'novalidate' => '') ); ?>
+<legend> Tambah Data event</legend>
 
-	<?php echo validation_errors(); ?>
 	<form class="form-horisontal" role="form">
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="">Nama</label>
@@ -25,21 +26,21 @@
 		<input type="text" name="tempat_event" class="form-control" id="Tempat Event" placeholder="tempat_event"><br></div></div>
 
 	<div class="form-group">
-		<label class="control-label col-sm-2" for="">Total Tiket</label>
+		<label class="control-label col-sm-2" for="">Kuota Tiket</label>
 		<div class="col-sm-10">
 		<input type="number" name="total_tiket" class="form-control" id="waktu_event" placeholder="Total"><br></div></div>
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="">Harga Tiket Satuan</label>
 		<div class="col-sm-10">
-		<input type="number" name="harga" class="form-control" id="waktu_event" placeholder="Total"><br></div></div>
+		<input type="number" name="harga_satuan" class="form-control" id="waktu_event" placeholder="Total"><br></div></div>
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="">Deskripsi Event</label>
 		<div class="col-sm-10">
-		<textarea class="form-control" ></textarea><br></div></div>
+		<textarea class="form-control" name="deskripsi"></textarea><br></div></div>
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="">Poster Event</label>
 		<div class="col-sm-10">
-		<input type="file"><br></div></div>
+		<input type="file" name="thumbnail"><br></div></div>
 
 
 	<div class="form-group">
