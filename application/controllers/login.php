@@ -43,7 +43,7 @@ class Login extends CI_Controller{
 
 	// Log in user
 	public function login(){
-		$data['page_title'] = 'Sign In Tong';
+		$data['page_title'] = 'Sign In';
 
 		$this->form_validation->set_rules('username', 'Username', 'required');
 		$this->form_validation->set_rules('password', 'Password', 'required');

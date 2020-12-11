@@ -50,20 +50,16 @@ class pembayaran extends CI_Controller {
 
 	public function Update($id)
 	{
-		$this->form_validation->set_rules('id_bayar','id_bayar','trim|required');
-		$this->form_validation->set_rules('id_user','id_user','trim|required');
-		$this->form_validation->set_rules('id_event','id_event','trim|required');
-		$this->form_validation->set_rules('id_tiket','id_tiket','trim|required');
-		$this->form_validation->set_rules('jumlah_beli','jumlah_beli','trim|required');
-		$this->form_validation->set_rules('total_harga','total_harga','trim|required');
 
-		$data['pembayaran']=$this->pembayaran_model->getevent($id);
+		$this->form_validation->set_rules('id_bayar','id_bayar','trim|required');
+
+		$data['pembayaran']=$this->pembayaran_model->getpembayaran($id);
 		if($this->form_validation->run()==FALSE){
-			$this->load->view('pembayaran/edit_pembayaran_view',$data);
+			redirect('index.php/admin');
 		}
 		else{
 			$this->pembayaran_model->UpdateById($id);
-			$this->load->view('pembayaran/edit_pembayaran_sukses');
+			redirect('index.php/pembayaran');
 			}
 		}	
 

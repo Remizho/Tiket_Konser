@@ -26,7 +26,7 @@
 		<input type="text" name="tempat_event" class="form-control" id="Tempat Event" placeholder="tempat_event"><br></div></div>
 
 	<div class="form-group">
-		<label class="control-label col-sm-2" for="">Kuota Tiket</label>
+		<label class="control-label col-sm-2" for="">Total Tiket</label>
 		<div class="col-sm-10">
 		<input type="number" name="total_tiket" class="form-control" id="waktu_event" placeholder="Total"><br></div></div>
 	<div class="form-group">

@@ -10,25 +10,25 @@ class pembayaran_model extends CI_Model {
 	}
 	
 	public function readevent(){
+        $this->db->join('event', 'event.id_event = pembayaran.id_event', 'left');
 		$query=$this->db->get('pembayaran');
 		return $query->result();
 	}
 	
 	//FUNGSI TAMBAH
-	 public function insertevent()
+	 public function insertbayar()
 	 {
 	 	$object = array
-		('id_bayar' =>$this->input->post('id_bayar'),
+		(
 	 	'id_user' =>$this->input->post('id_user'),
 	 	'id_event' =>$this->input->post('id_event'),
-	 	'id_tiket' =>$this->input->post('id_tiket'),		 	
-	 	'jumlah_beli' =>$this->input->post('jumlah_beli'),	 
-	 	'total_harga' =>$this->input->post('total_harga')
+	 	'jumlah_beli' =>$this->input->post('tiket'),	 
+	 	'total_harga' =>$this->input->post('harga_satuan')*$this->input->post('tiket')
 		);
 	 	$this->db->insert('pembayaran',$object);
 	}
 
-	public function getevent($id)
+	public function getpembayaran($id)
 	{
 		$this->db->where('id_bayar',$id);
 		$query=$this->db->get('pembayaran');
@@ -37,12 +37,7 @@ class pembayaran_model extends CI_Model {
 	
 	public function UpdateById($id)
 	{
-		$data = array('id_bayar' =>$this->input->post('id_bayar'),
-		 	'id_user' =>$this->input->post('id_user'),
-		 	'id_event' =>$this->input->post('id_event'),
-		 	'id_tiket' =>$this->input->post('id_tiket'),
-		 	'jumlah_beli' =>$this->input->post('jumlah_beli'),
-		 	'total_harga' =>$this->input->post('total_harga')
+		$data = array('status' =>1
 		 );
 		$this->db->where('id_bayar',$id);
 		$this->db->update('pembayaran',$data);

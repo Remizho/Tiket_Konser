@@ -20,7 +20,9 @@ class event extends CI_Controller {
 	{
 		$this->load->helper('url');
 		$this->load->model('event_model');
+		
 		$data['event']=$this->event_model->readevent();
+
 		$this->load->view('event/list_event', $data);	
 	}
 	// Membuat fungsi create

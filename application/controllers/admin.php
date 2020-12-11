@@ -26,7 +26,6 @@ class admin extends CI_Controller {
 		$this->load->view('admin/list_admin', $data);	
 	}
 
-	//login admin untuk mendapatkan session
 	public function login()
 	{
 		$this->load->helper('url');
@@ -77,6 +76,7 @@ class admin extends CI_Controller {
 	public function logout(){
 		// Unset user data
 		$this->session->unset_userdata('logged_in_admin');
+		$this->session->unset_userdata('logged_in');
 		$this->session->unset_userdata('id_admin');
 		$this->session->unset_userdata('username');
 

@@ -16,7 +16,29 @@
 	<script src="js/froogaloop.js"></script>
 	<script src="js/jquery.fitvid.js"></script>
 -->
-   	<script type="text/javascript" src="<?=site_url()?>assets/frontend/js/templatemo-script.js"></script>      		<!-- Templatemo Script -->
+   	<script type="text/javascript" src="<?=site_url()?>assets/frontend/js/templatemo-script.js"></script>    
+	   <script>
+            $(function(){
+                $('a#yakin').click(function(){
+                    if(confirm('Yakin ingin membeli tiket ?')) {
+                        return true;
+                    }
+
+                    return false;
+                });
+            });
+        </script> 
+	   <script>
+            $(function(){
+                $('a#logout').click(function(){
+                    if(confirm('Yakin keluar akun ?')) {
+                        return true;
+                    }
+
+                    return false;
+                });
+            });
+        </script>  		<!-- Templatemo Script -->
 	<script>
 		// HTML document is loaded. DOM is ready.
 		$(function() {

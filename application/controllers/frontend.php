@@ -8,6 +8,8 @@ class frontend extends CI_Controller {
 
 		parent::__construct();
 		$this->load->model('admin_model');
+		$this->load->model('event_model');
+		$this->load->model('pembayaran_model');
 		$this->load->library('form_validation');
 		$this->load->helper('url','form');
 
@@ -17,8 +19,10 @@ class frontend extends CI_Controller {
 	{
 		$this->load->helper('url');
 
+		$data['event']=$this->event_model->readevent();
+		
 		$this->load->view('template/header_fo');	
-		$this->load->view('frontend/index');	
+		$this->load->view('frontend/index',$data);	
 		$this->load->view('template/footer_fo');	
 	}
 
@@ -31,29 +35,42 @@ class frontend extends CI_Controller {
 		$this->load->view('template/footer_fo');	
 	}
 
-	//FUNGSI TAMBAH
-	 public function Create()
+	public function pesanan()
 	{
-	 	$this->load->helper('url','form');
-		$this->load->library('form_validation');
-	 	$this->load->model('event_model');
+		$this->load->helper('url');
 
-	 	$this->form_validation->set_rules('id_event','event','trim|required');
-	 	$this->form_validation->set_rules('id_tiket','id_tiket','trim|required');
-	 	$this->form_validation->set_rules('nama_event','nama_event','trim|required');
-	 	$this->form_validation->set_rules('tanggal_event','tanggal_event','trim|required');
-	 	$this->form_validation->set_rules('tempat_event','tempat_event','trim|required');
-	 	$this->form_validation->set_rules('waktu_event','waktu_event','trim|required');
-	 if($this->form_validation->run()==FALSE)
-	 {
-	 	$this->load->view('event/tambah_event_view');
-	 }
-	 else
-	 {
-	 	$this->event_model->insertevent();
-	$this->load->view('event/tambah_event_sukses');
-		}
+		$data['pembayaran']=$this->pembayaran_model->readevent();
+
+		$this->load->view('template/header_fo');	
+		$this->load->view('frontend/pesanan',$data);	
+		$this->load->view('template/footer_fo');	
 	}
+
+	//FUNGSI TAMBAH
+	 public function booking()
+	 {
+		if(!$this->session->userdata('logged_in')) {
+			redirect('index.php/user/login');
+		}else{
+
+
+				$this->load->helper('url','form');
+				$this->load->library('form_validation');
+				$this->load->model('pembayaran_model');
+
+				$this->form_validation->set_rules('id_user','id_user','trim|required');
+				if($this->form_validation->run()==FALSE)
+				{
+				$this->load->view('frontend');
+				}
+				else
+				{
+				$this->pembayaran_model->insertbayar();
+				redirect('index.php/frontend/pesanan');
+				}
+		}
+		}
+
 
 	public function Update($id)
 	{

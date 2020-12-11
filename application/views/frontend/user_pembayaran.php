@@ -3,10 +3,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="booking-form">
+			<?php if($this->session->flashdata('login_failed')): ?>
+			<?php echo '<div class="alert alert-danger">'.$this->session->flashdata('login_failed').'</div>'; ?>
+			<?php endif; ?>
 						<div class="form-header">
-							<h1>MASUK ADMIN</h1>
+							<h1>Masuk Disini</h1>
 						</div>
-						<?php echo form_open('index.php/admin/login'); ?>
+						<?php echo form_open('index.php/frontend/user_pembayaran'); ?>
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
@@ -22,10 +25,11 @@
 								</div>
 							</div>
 							<center><div class="form-btn" style="width: 200px"> 
-								<button class="submit-btn" type="submit">Login</button>
+								<button class="submit-btn">Login</button>
 							</div>
 							<br>
-							<?php echo form_close(); ?>
+						<?php echo form_close(); ?>
+								Tidak punya akun, <a href="<?=site_url()?>index.php/user/register">Daftar disini</a><br>
 								<a href="<?=site_url()?>index.php/frontend"><< Kembali</a>
 							</center>
 					</div>

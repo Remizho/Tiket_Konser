@@ -52,58 +52,43 @@
 	<!-- gray bg -->	
 	<section class="container tm-home-section-1" id="more">
 		<!-- <div class="row"> -->
+
 			
-			<div class="col-lg-4 col-md-4 col-sm-6">
+	<?php foreach ($event as $key) { ?>
+		
+		<div class="col-lg-4 col-md-4 col-sm-6" style="margin-top:25px;">
 				<div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center">
-					<img src="<?=site_url()?>assets/frontend/img/index-01.jpg" alt="image" class="img-responsive">
-					<a href="#">
-						<div class="tm-yellow-gradient-bg tm-city-price-container">
-							<span>Kickfest</span>
-							<span>Rp70.000</span>
-						</div>	
-					</a>			
-				</div>				
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6">
-				<div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center">
-					<img src="<?=site_url()?>assets/frontend/img/index-01.jpg" alt="image" class="img-responsive">
-					<a href="#">
+					<img src="<?=site_url()?>assets/img/<?php echo $key->gambar;?>" alt="image" class="img-responsive" style="height:350px;width:400px;margin-bottom: -25px">
+					
+					<!-- <form action="<?=site_url()?>index.php/frontend/booking/" id="yakin"> -->
+						<?php  echo form_open('index.php/frontend/booking');?>
+						<?php if($this->session->userdata('logged_in')) : ?>
+						<input type="hidden" name="id_user" value="<?php echo $_SESSION['id_user'];?>">
+						<?php endif; ?>
+						<input type="hidden" name="id_event" value="<?php echo $key->id_event;?>">
+						<input type="hidden" name="harga_satuan" value="<?php echo $key->harga_satuan;?>">
+						<center><input type="text" name="tiket" placeholder="Jumlah tiket" style="width:100%" required=""></center>
+						<button type="submit" style="width:100%;">
 						<div class="tm-green-gradient-bg tm-city-price-container">
-							<span>KSSH Malang</span>
-							<span>Rp40.000</span>
+							<span>
+							Klik pesan<br>
+							<?php echo $key->nama_event;?></span>
+							<span>Rp. <?php echo $key->harga_satuan;?>
+							<br>
+							sisa tiket <?php echo $key->total_tiket;?></span>
 						</div>	
-					</a>			
-				</div>				
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6">
-				<div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right">
-					<img src="<?=site_url()?>assets/frontend/img/index-02.jpg" alt="image" class="img-responsive">
-					<a href="#">
-						<div class="tm-red-gradient-bg tm-city-price-container">
-							<span>PSCS Malang</span>
-							<span>Rp65.000</span>
-						</div>	
-					</a>					
-				</div>				
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6" style="margin-top: 20px; margin-left: -3px">
-				<div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right">
-					<img src="<?=site_url()?>assets/frontend/img/index-02.jpg" alt="image" class="img-responsive">
-					<a href="#">
-						<div class="tm-red-gradient-bg tm-city-price-container">
-							<span>CRESTA Malang</span>
-							<span>Rp50.000</span>
-						</div>	
-					</a>					
+						</button>
+					</form>			
 				</div>				
 			</div>
 
-
+	<?php }?>
+			
 		<!-- </div> -->
 	</section>		
 	
 	<!-- white bg -->
-	<!-- <section class="tm-white-bg section-padding-bottom">
+	<section class="tm-white-bg section-padding-bottom">
 		<div class="container">
 			<div class="row">
 				<div class="tm-section-header section-margin-top">
@@ -159,4 +144,4 @@
 			    
 			</div>		
 		</div>
-	</section> -->
+	</section>

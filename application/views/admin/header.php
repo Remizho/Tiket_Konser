@@ -28,7 +28,7 @@
             <li><a href="<?=site_url()?>index.php/event/index"><i class="glyphicon glyphicon-list"></i>   Event</a></li>
             <li><a href="<?=site_url()?>index.php/pembayaran/index"><i class="glyphicon glyphicon-inbox"></i>    Pembayaran</a></li>
             <li><a href="<?=site_url()?>index.php/user/index"><i class="glyphicon glyphicon-user"></i>   User</a></li>
-            <li><a href="<?=site_url()?>index.php/admin/logout"><i class="glyphicon glyphicon-off"></i>   Logout</a></li>
+            <li><a href="<?=site_url()?>index.php/admin/logout" id="logout"><i class="glyphicon glyphicon-off"></i>   Logout</a></li>
           </ul>
         </div>
       </div>

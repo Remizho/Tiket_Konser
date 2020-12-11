@@ -34,15 +34,17 @@
 	<section class="container tm-home-section-1" id="more">
 		<div class="row">
 			<!-- slider -->
-			<!-- <div class="flexslider flexslider-about effect2">
+			<div class="flexslider flexslider-about effect2" style="margin-top: 100px">
 			  <ul class="slides">
 			    <li>
-			      <img src="<?=site_url()?>/assets/frontend/img/about-1.jpg" alt="image" />
+			      <img src="<?=site_url()?>/assets/frontend/img/about-1.jpg" style="margin-top: 6px" alt="image" />
 			      <div class="flex-caption">
-			      	<h2 class="slider-title">Welcome To Holiday</h2>
-			      	<h3 class="slider-subtitle">Gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis auctor</h3>
-			      	<p class="slider-description">Holiday is free Bootstrap v3.3.5 responsive template for tour and travel websites. You can download and use this layout for any purpose. You do not need to provide a credit link to us. If you have any question, feel free to contact us. <br><br>
-                    Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum.</p>
+			      	<h2 class="slider-title" style="font-family: monotype corsiva">Informasi Ayo Konser</h2>
+			      	<h3 class="slider-subtitle">Penjelasan Singkat Website</h3>
+			      	<p class="slider-description">Website ini menyediakan fasilitas kepada para penonton yang ingin menyaksikan konser dengan membeli tiket secara online. Kemudahan para penonton adalah tujuan utama dari pembuatan website ini, agar penonton yang akan hadir di acara yang kami sediakan tidak perlu mengantri panjang dilokasi area pembelian tiket. Tiket yang sudah dibeli tidak dapat dikembalikan, jika ingin informasi lebih lanjut dapat menghubungi pihak vendor acara secara personal.
+			      	<br>
+			      	<br>
+			      	Selamat menikmati acara anda.</p>
 			      	<div class="slider-social">
 			      		<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
 			      		<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
@@ -52,40 +54,11 @@
 			      </div>			      
 			    </li>
 			    <li>
-			      <img src="<?=site_url()?>/assets/frontend/img/about-1.jpg" alt="image" />
+			      <img src="<?=site_url()?>/assets/frontend/img/about-1.jpg" style="margin-top: 6px" alt="image" />
 			      <div class="flex-caption">
-			      	<h2 class="slider-title">Thank you for choosing us!</h2>
-			      	<h3 class="slider-subtitle">Gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis auctor, nisi elit consequat ipsum</h3>
-			      	<p class="slider-description">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br><br>
-                    Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris gestas quam, ut aliquam massa nisi.</p>
-			      	<div class="slider-social">
-			      		<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
-			      		<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
-			      		<a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
-			      		<a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
-			      	</div>
-			      </div>			      
-			    </li>
-			    <li>
-			      <img src="<?=site_url()?>/assets/frontend/img/about-1.jpg" alt="image" />
-			      <div class="flex-caption">
-			      	<h2 class="slider-title">More Programs to come</h2>
-			      	<h3 class="slider-subtitle">Gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis auctor, nisi elit consequat ipsum</h3>
-			      	<p class="slider-description">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris gestas quam, ut aliquam massa nisi.</p>
-			      	<div class="slider-social">
-			      		<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
-			      		<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
-			      		<a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
-			      		<a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
-			      	</div>
-			      </div>			      
-			    </li>
-			    <li>
-			      <img src="<?=site_url()?>/assets/frontend/img/about-1.jpg" alt="image" />
-			      <div class="flex-caption">
-			      	<h2 class="slider-title">Tour and Travel</h2>
-			      	<h3 class="slider-subtitle">Gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis auctor, nisi elit consequat ipsum</h3>
-			      	<p class="slider-description">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris gestas quam, ut aliquam massa nisi.</p>
+			      	<h2 class="slider-title" style="font-family: monotype corsiva">Kelompok Kami</h2>
+			      	<h3 class="slider-subtitle">Penjelasan Singkat Kelompok Kami</h3>
+			      	<p class="slider-description">Kelompok kami terdiri dari 3 anggota yaitu Miranda Eristiana sebagai Ketua Kelompok, Remizar Fahrezi Achyar Firdaus sebagai Anggota, Dian Ika Fitriani sebagai anggota.</p>
 			      	<div class="slider-social">
 			      		<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
 			      		<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
@@ -96,7 +69,7 @@
 			    </li>
 			  </ul>
 			</div>
-		</div> -->
+		</div>
 	
 		<div class="section-margin-top about-section">
 			<div class="row">				
