@@ -60,8 +60,8 @@ class pembayaran extends CI_Controller {
 		else{
 			$this->pembayaran_model->UpdateById($id);
 			redirect('index.php/pembayaran');
-			}
-		}	
+		}
+	}	
 
 	public function delete($id)
 	{

@@ -14,7 +14,7 @@
 		<div class="alert alert-success">
 		<strong> Data Berhasil dihapus</strong>
 		<?php 
-		echo anchor('pembayaran/index', 'Lihat data pembayaran'); ?>
+		echo anchor('index.php/pembayaran', 'Lihat data pembayaran'); ?>
 		</div>
 		<script src="<?=base_url()?>assets/js/jquery.js"></script>
 		<script src="<?=base_url()?>assets/js/bootsrtap.min.js"></script>

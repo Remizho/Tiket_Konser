@@ -42,19 +42,19 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="waktu_event">Total tiket </label>
 		<div class="col-sm-10">
-		<input type="text" name="total_tiket" class="form-control" id="waktu_event" value="<?php echo $event[0]->total_tiket?>" placeholder="waktu_event"><br>
+		<input type="text" name="total_tiket" class="form-control" id="waktu_event" value="<?php echo $event[0]->total_tiket?>" placeholder="total tiket"><br>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="waktu_event">Harga tiket satuan</label>
 		<div class="col-sm-10">
-		<input type="text" name="harga_satuan" class="form-control" id="waktu_event" value="<?php echo $event[0]->harga_satuan?>" placeholder="waktu_event"><br>
+		<input type="text" name="harga_satuan" class="form-control" id="waktu_event" value="<?php echo $event[0]->harga_satuan?>" placeholder="harga tiket"><br>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="waktu_event">deskripsi</label>
 		<div class="col-sm-10">
-		<input type="text" name="deskripsi" class="form-control" id="waktu_event" value="<?php echo $event[0]->deskripsi?>" placeholder="waktu_event"><br>
+		<input type="text" name="deskripsi" class="form-control" id="waktu_event" value="<?php echo $event[0]->deskripsi?>" placeholder="deskripsi"><br>
 		</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="waktu_event">Poster</label>

@@ -37,6 +37,8 @@ class frontend extends CI_Controller {
 
 	public function pesanan()
 	{
+		if(!$this->session->userdata('logged_in')) 
+			redirect('index.php/user/login');
 		$this->load->helper('url');
 
 		$data['pembayaran']=$this->pembayaran_model->readevent();

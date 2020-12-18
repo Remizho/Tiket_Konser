@@ -13,7 +13,27 @@
                     return false;
                 });
             });
-        </script>  
+            $(function(){
+                $('a#hapus').click(function(){
+                    if(confirm('Yakin hapus ?')) {
+                        return true;
+                    }
+
+                    return false;
+                });
+            });
+
+            $(function(){
+                $('a#konfirmasi').click(function(){
+                    if(confirm('Yakin konfirmasil pembayaran user ?')) {
+                        return true;
+                    }
+
+                    return false;
+                });
+            });
+      </script>  
+        
 </body>
 
 </html>

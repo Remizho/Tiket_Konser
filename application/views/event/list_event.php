@@ -28,7 +28,7 @@
 			<td></td>
 			<td>
 				<a href="<?=site_url()?>index.php/event/delete/<?php echo "$key->id_event"?>"><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button></p></a>
-				<a href="<?=site_url()?>/event/edit/<?php echo "$key->id_event"?>"><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span></button></p></a>
+				<a href="<?=site_url()?>/index.php/event/edit/<?php echo "$key->id_event"?>"><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span></button></p></a>
 			</td>
 		</tr>
 		<?php }?>

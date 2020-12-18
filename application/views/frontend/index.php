@@ -1,3 +1,10 @@
+<style>
+input[type=number] {
+  width: 100%;
+  padding: 8px 20px;
+  box-sizing: border-box;
+}
+</style>
 <section class="tm-banner">
 		<!-- Flexslider -->
 		<div class="flexslider flexslider-banner">
@@ -58,7 +65,7 @@
 		
 		<div class="col-lg-4 col-md-4 col-sm-6" style="margin-top:25px;">
 				<div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center">
-					<img src="<?=site_url()?>assets/img/<?php echo $key->gambar;?>" alt="image" class="img-responsive" style="height:350px;width:400px;margin-bottom: -25px">
+					<img src="<?=site_url()?>assets/img/<?php echo $key->gambar;?>" alt="image" class="img-responsive" style="height:350px;width:400px;margin-bottom: -35px">
 					
 					<!-- <form action="<?=site_url()?>index.php/frontend/booking/" id="yakin"> -->
 						<?php  echo form_open('index.php/frontend/booking');?>
@@ -67,16 +74,14 @@
 						<?php endif; ?>
 						<input type="hidden" name="id_event" value="<?php echo $key->id_event;?>">
 						<input type="hidden" name="harga_satuan" value="<?php echo $key->harga_satuan;?>">
-						<center><input type="text" name="tiket" placeholder="Jumlah tiket" style="width:100%" required=""></center>
-						<button type="submit" style="width:100%;">
-						<div class="tm-green-gradient-bg tm-city-price-container">
+						<center><input type="number" name="tiket" placeholder="Jumlah tiket" required=""></center>
+						<button type="submit" style="width:100%;border:none;text-decoration:none;" class="tm-green-gradient-bg tm-city-price-container">
 							<span>
 							Klik pesan<br>
 							<?php echo $key->nama_event;?></span>
 							<span>Rp. <?php echo $key->harga_satuan;?>
 							<br>
 							sisa tiket <?php echo $key->total_tiket;?></span>
-						</div>	
 						</button>
 					</form>			
 				</div>				

@@ -46,8 +46,8 @@ http://www.templatemo.com/tm-475-holiday
 								<li><a href="<?=site_url()?>index.php/user/login">Login</a></li>
             				<?php endif; ?>
 							<?php if($this->session->userdata('logged_in')) : ?>
-								<li><a href="<?=site_url()?>index.php/user/logout" id="logout">Logout</a></li>
 								<li><a href="<?=site_url()?>index.php/frontend/pesanan">Pesanan <?php echo $_SESSION['username'] ?></a></li>
+								<li><a href="<?=site_url()?>index.php/user/logout" id="logout">Logout</a></li>
             				<?php endif; ?>
 							
 						</ul>
