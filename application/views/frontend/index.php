@@ -87,7 +87,7 @@ input[type=number] {
 				</div>				
 			</div>
 
-	<?php }?>
+	<?php } ?>
 			
 		<!-- </div> -->
 	</section>		
@@ -101,51 +101,21 @@ input[type=number] {
 					<div class="col-lg-4 col-md-6 col-sm-6"><h2 class="tm-section-title">Review Acara</h2></div>
 					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>	
 				</div>
+
+				<?php foreach ($event as $key) { ?>
 				<div class="col-lg-6">
 					<div class="tm-home-box-3">
 						<div class="tm-home-box-3-img-container">
-							<img src="<?=site_url()?>assets/frontend/img/index-07.jpg" alt="image" class="img-responsive">	
+							<!-- <img src="<?=site_url()?>assets/frontend/img/index-07.jpg" alt="image" class="img-responsive">	 -->
+							<img src="<?=site_url()?>assets/img/<?php echo $key->gambar;?>" alt="image" class="img-responsive" style="height:230px;width:250px;margin-bottom: -35px">
 						</div>						
-						<div class="tm-home-box-3-info">
-							<p class="tm-home-box-3-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-					        <div class="tm-home-box-2-container">
-							<a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-							<a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Detail</span></a>
-							<a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
-						</div>
+						<div class="tm-home-box-3-info" style="width:100%;">
+							<p class="tm-home-box-3-description"><?php echo $key->deskripsi;?></p>
 						</div>						
 					</div>					
-			     </div>
-			     <div class="col-lg-6">
-			        <div class="tm-home-box-3">
-						<div class="tm-home-box-3-img-container">
-							<img src="<?=site_url()?>assets/frontend/img/index-08.jpg" alt="image" class="img-responsive">	
-						</div>						
-						<div class="tm-home-box-3-info">
-							<p class="tm-home-box-3-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-					        <div class="tm-home-box-2-container">
-							<a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-							<a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Travel</span></a>
-							<a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
-						</div>
-						</div>						
-					</div>
-				</div>
-				<div class="col-lg-6">
-				    <div class="tm-home-box-3">
-						<div class="tm-home-box-3-img-container">
-							<img src="<?=site_url()?>assets/frontend/img/index-09.jpg" alt="image" class="img-responsive">	
-						</div>						
-						<div class="tm-home-box-3-info">
-							<p class="tm-home-box-3-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-					        <div class="tm-home-box-2-container">
-							<a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-							<a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Travel</span></a>
-							<a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
-						</div>
-						</div>						
-					</div>
 			    </div>
+				<?php } ?>
+
 			    
 			</div>		
 		</div>
